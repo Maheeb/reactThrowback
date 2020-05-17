@@ -10,12 +10,14 @@ render() {
   return (
       <div className="App">
           <h1>This is my component</h1>
-          <Header/>
-          <Contact />
+          <Header  title="I am header.js" />
+          <Contact  name="AZMAEEN"  address="Dhaka"  blood="B positive" />
 
       </div>
   );
  }
 }
+
+
 
 export default App;
