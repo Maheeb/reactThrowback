@@ -5,15 +5,20 @@ const Header = (props) =>{
 
     const {title} = props;
     return(
+        <nav className="navbar navbar-expand-sm navbar-dark bg-danger mb-3 py-0">
+            <div className="container">
+                <a href="/" className="navbar-brand text-center"> {title} </a>
+                <div>
+                    <ul className="navbar-nav mr-auto">
+                        <li className="nav-item">
+                            <a href="" className="nav-link">Home</a>
+                        </li>
+                    </ul>
 
-        <nav className="navbar navbar-expand-lg navbar-light bg-danger">
-            <a  style={headerStyle} className="navbar-brand" href="#">{title}</a>
-            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span className="navbar-toggler-icon"></span>
-            </button>
-
+                </div>
+            </div>
         </nav>
+
     );
 }
 

@@ -11,13 +11,13 @@ class Contact extends Component {
 
 
 
-       const {name,address,blood} = this.props;
+       const {name,address,phone} = this.props;
        return (
-           <div >
-               <ul>
-                   <li>Name: {name} </li>
-                   <li>Address: {address} </li>
-                   <li>Blood group: {blood}  </li>
+           <div className="card card-body mb-3">
+                <h4>{name}</h4>
+               <ul className="list-group">
+                   <li className="list-group-item">Address: {address} </li>
+                   <li className="list-group-item">Phone No: {phone}  </li>
                </ul>
            </div>
        );
@@ -29,5 +29,6 @@ Contact.propTypes = {
     address: PropTypes.string.isRequired,
     blood: PropTypes.string.isRequired
 }
+
 
 export default Contact;
