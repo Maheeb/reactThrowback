@@ -5,9 +5,15 @@ const Header = (props) =>{
 
     const {title} = props;
     return(
-        <div>
-            <h2 style={headerStyle}> {title} </h2>
-        </div>
+
+        <nav className="navbar navbar-expand-lg navbar-light bg-danger">
+            <a  style={headerStyle} className="navbar-brand" href="#">{title}</a>
+            <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span className="navbar-toggler-icon"></span>
+            </button>
+
+        </nav>
     );
 }
 
@@ -16,7 +22,7 @@ Header.propTypes = {
 }
 
 const headerStyle = {
-    color: 'green',
-    fontSize: '50px'
+    color: 'white',
+    fontSize: '20px'
 }
 export default Header;

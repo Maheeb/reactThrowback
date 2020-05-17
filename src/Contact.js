@@ -1,13 +1,19 @@
 import React, {Component} from 'react';
 // import logo from './logo.svg';
-import './App.css';
+// import './App.css';
 import PropTypes from 'prop-types'
 import './contact.css'
 class Contact extends Component {
    render() {
+
+
+
+
+
+
        const {name,address,blood} = this.props;
        return (
-           <div>
+           <div >
                <ul>
                    <li>Name: {name} </li>
                    <li>Address: {address} </li>
