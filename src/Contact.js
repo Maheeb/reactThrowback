@@ -9,7 +9,9 @@ class Contact extends Component {
     onShowClick = (e)=>{
         this.setState( {showContactInfo: !this.state.showContactInfo} )
     }
-
+    onDeleteClick = ()=>{
+        this.props.deleteClickHandler();
+    }
 
    render() {
        const {name,address,phone} = this.props.item;
@@ -18,7 +20,15 @@ class Contact extends Component {
            <div className="card card-body mb-3">
                 <h4>{name} <i
                     onClick={this.onShowClick}
-                    className="fa fa-sort-down" /> </h4>
+                    className="fa fa-sort-down"
+                    style={{ cursor: 'pointer' }}
+                />
+                <i className="fa fa-times"
+                   style={{ cursor: 'pointer', float:'right', color:'red' }}
+                    onClick={this.onDeleteClick}
+                >
+                </i>
+                </h4>
                {showContactInfo?(<ul className="list-group">
                    <li className="list-group-item">Address: {address} </li>
                    <li className="list-group-item">Phone No: {phone}  </li>
