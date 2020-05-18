@@ -20,7 +20,7 @@ class AddContact extends Component {
                         <div className="form-group">
                             <label htmlFor="name">Name</label>
                             <input type="text" name="name" className="form-control form-control-lg"
-                            placeholder="Enter Name here"
+                            placeholder="Enter Your Name here"
                                    value={name}
                                    onChange={this.onChange}
                             />
