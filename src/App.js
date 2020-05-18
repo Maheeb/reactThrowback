@@ -1,11 +1,12 @@
 import React, {Component} from 'react';
 // import logo from './logo.svg';
-import Contact from './Contact.js'
+import Contacts from './Contacts'
 // // import './App.css';
 import Header from './Header'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './contact.css'
+import Contact from "./Contact";
 class App extends Component{
 render() {
 
@@ -14,8 +15,7 @@ render() {
       <div className="App">
         <Header title="Contact Manager"  />
           <div className="container">
-        <Contact name={"Maheeb"} address={"Dhaka"} phone={"555-555-555"}/>
-          <Contact name={"Azmaeen"} address={"Dhaka"} phone={"333-333-333"}/>
+           <Contacts/>
       </div>
       </div>
   );
